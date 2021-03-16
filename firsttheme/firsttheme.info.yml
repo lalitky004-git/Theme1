@@ -1,0 +1,17 @@
+name: customtheme1
+description: 'My first custom theme.'
+package: Custom
+base theme: classy
+type: theme
+core_version_requirement: ^8 || ^9
+libraries:
+  - firsttheme/global-styling
+
+libraries-override:
+  classy/base: false
+  core/normalise: false
+
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
